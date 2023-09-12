@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .center {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .btn1 {
+        padding: 10px 30px;
+        background: hsl(0, 0%, 95%);
+        color: hsl(31, 77%, 52%);
+        font-size: 15px;
+      }
+
+      .btn1:hover {
+        background: hsl(31, 77%, 52%);
+        color: hsl(0, 0%, 95%);
+        border: 3px solid hsl(0, 0%, 95%);
+      }
+
+      .btn2 {
+        padding: 10px 30px;
+        background: hsl(0, 0%, 95%);
+        color: hsl(184, 100%, 22%);
+        font-size: 15px;
+      }
+
+      .btn2:hover {
+        background: hsl(184, 100%, 22%);
+        color: hsl(0, 0%, 95%);
+        border: 3px solid hsl(0, 0%, 95%);
+      }
+
+      .btn3 {
+        padding: 10px 30px;
+        background: hsl(0, 0%, 95%);
+        color: hsl(179, 100%, 13%);
+        font-size: 15px;
+      }
+
+      .btn3:hover {
+        background: hsl(179, 100%, 13%);
+        color: hsl(0, 0%, 95%);
+        border: 3px solid hsl(0, 0%, 95%);
+      }
+    </style>
+  </head>
+  <body style="background-color: hsl(0, 0%, 95%)">
+    Sedans Choose a sedan for its affordability and excellent fuel economy.
+    Ideal for cruising in the city or on your next road trip. SUVs Take an SUV
+    for its spacious interior, power, and versatility. Perfect for your next
+    family vacation and off-road adventures. Luxury Cruise in the best car
+    brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+    rental and arrive in style.
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ugbor Ebube</a>.
+    </div>
+
+    <main>
+      <div class="container-xl center">
+        <div class="row">
+          <div
+            class="card col-4"
+            style="width: 20rem; height: 30rem; background: hsl(31, 77%, 52%)"
+          >
+            <div class="card-body my-5 mx-3">
+              <div>
+                <img src="/images/icon-sedans.svg" alt="" width="72" />
+              </div>
+              <h5
+                style="
+                  color: hsl(0, 0%, 95%);
+                  font-family: 'Big Shoulders Display', cursive;
+                "
+                class="card-title display-6 my-4"
+              >
+                SEDANS
+              </h5>
+              <p
+                style="
+                  color: hsla(0, 0%, 100%, 0.75);
+                  font-family: 'Lexend Deca', sans-serif;
+                "
+                class="card-text"
+              >
+                Choose a sedan for its affordability and excellent fuel economy.
+                Ideal for cruising in the city or an your next road trip.
+              </p>
+              <div style="font-family: 'Lexend Deca', sans-serif" class="mt-5">
+                <a href="#" class="btn btn-lg rounded-pill btn1">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-4"
+            style="width: 20rem; height: 30rem; background: hsl(184, 100%, 22%)"
+          >
+            <div class="card-body my-5 mx-3">
+              <div>
+                <img src="/images/icon-suvs.svg" alt="" width="72" />
+              </div>
+              <h5
+                style="
+                  color: hsl(0, 0%, 95%);
+                  font-family: 'Big Shoulders Display', cursive;
+                "
+                class="card-title display-6 my-4"
+              >
+                SUVS
+              </h5>
+              <p
+                style="
+                  color: hsla(0, 0%, 100%, 0.75);
+                  font-family: 'Lexend Deca', sans-serif;
+                "
+                class="card-text"
+              >
+                Take an SUV for its spacious interior,power, and versatility.
+                Perfect for your next family vacation and off-road adventures.
+              </p>
+              <div style="font-family: 'Lexend Deca', sans-serif" class="mt-5">
+                <a href="#" class="btn btn-lg rounded-pill btn2">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card col-4"
+            style="width: 20rem; height: 30rem; background: hsl(179, 100%, 13%)"
+          >
+            <div class="card-body my-5 mx-3">
+              <div>
+                <img src="/images/icon-luxury.svg" alt="" width="72" />
+              </div>
+              <h5
+                style="
+                  color: hsl(0, 0%, 95%);
+                  font-family: 'Big Shoulders Display', cursive;
+                "
+                class="card-title display-6 my-4"
+              >
+                LUXURY
+              </h5>
+              <p
+                style="
+                  color: hsla(0, 0%, 100%, 0.75);
+                  font-family: 'Lexend Deca', sans-serif;
+                "
+                class="card-text"
+              >
+                Cruise in the best car brands without the bloasted prices. Enjoy
+                the enhanced comfort of a luxury rental and arrive in style.
+              </p>
+              <div style="font-family: 'Lexend Deca', sans-serif" class="mt-5">
+                <a href="#" class="btn btn-lg rounded-pill btn3">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
